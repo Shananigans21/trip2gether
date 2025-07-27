@@ -20,7 +20,7 @@ function NewTripPage() {
       .then((res) => res.json())
       .then((data) => {
         console.log('Trip created:', data);
-        navigate('/trips'); // 👈 Redirect after success
+        navigate('/trips'); 
       })
       .catch((err) => {
         console.error('Error creating trip:', err);
